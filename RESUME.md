@@ -51,7 +51,7 @@ _2010 – 2015_
 
 ## Technical Skills
 
-**Frontend:** React, Next.js, JavaScript, TypeScript, HTML, CSS
-**Backend:** Node.js, Express, GraphQL, MongoDB, MySQL, Redis
-**Testing:** Playwright, Puppeteer, BrowserStack
-**DevOps:** Docker, Ansible, AWS, GCP, GitHub Actions, Shell Scripting, Self-hosted servers
+- **Frontend:** React, Next.js, JavaScript, TypeScript, HTML, CSS
+- **Backend:** Node.js, Express, GraphQL, MongoDB, MySQL, Redis
+- **Testing:** Playwright, Puppeteer, BrowserStack
+- **DevOps:** Terraform, Docker, Ansible, AWS, GCP, GitHub Actions, Shell Scripting, Self-hosted servers
