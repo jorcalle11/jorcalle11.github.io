@@ -1,0 +1,32 @@
+.layout-toggle {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.layout-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: calc(var(--radius) - 2px);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.layout-option:hover {
+  color: var(--text);
+}
+
+.layout-option.active {
+  background: var(--bg);
+  color: var(--accent);
+  box-shadow: var(--shadow);
+}

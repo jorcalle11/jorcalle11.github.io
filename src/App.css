@@ -1,0 +1,380 @@
+.cv-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem var(--content-padding);
+}
+
+.page-header-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.page-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+
+.page-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* ============================
+   SWISS LAYOUT STYLES
+   ============================ */
+
+.swiss-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--content-padding);
+  background: var(--bg);
+}
+
+.swiss-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.swiss-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+/* Subtitle (paragraph immediately after h1) */
+.swiss-content h1+p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Contact line (paragraph with links) */
+.swiss-content h1+p+p {
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.swiss-section-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.swiss-job-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.swiss-job-title+p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.swiss-paragraph {
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
+.swiss-list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.swiss-list-item {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-muted);
+}
+
+.swiss-list-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.swiss-link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link-icon {
+  margin-right: 0.3rem;
+  vertical-align: text-bottom;
+}
+
+.contact-link-text {
+  vertical-align: middle;
+}
+
+.swiss-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.swiss-strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ============================
+   SIDEBAR LAYOUT STYLES
+   ============================ */
+
+.sidebar-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--content-padding);
+  background: var(--bg);
+}
+
+.sidebar-header {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.sidebar-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+/* Subtitle (paragraph immediately after h1) */
+.sidebar-header p:first-of-type {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+/* Contact line */
+.sidebar-header p:last-of-type {
+  font-size: 0.875rem;
+  color: var(--text-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.sidebar-header-link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.sidebar-header-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem;
+}
+
+.sidebar-column {
+  background: var(--bg-elevated);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  height: fit-content;
+  position: sticky;
+  top: 5rem;
+}
+
+.sidebar-main {
+  min-width: 0;
+}
+
+.sidebar-section-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-section-title:first-child {
+  margin-top: 0;
+}
+
+.sidebar-subsection-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-job-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.sidebar-job-title+p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-text {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.sidebar-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.sidebar-list-item {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.sidebar-list-item::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.sidebar-link {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.sidebar-strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ============================
+   PRINT STYLES
+   ============================ */
+
+@media print {
+
+  /* Ensure visible layout is shown for PDF generation */
+  .swiss-layout,
+  .sidebar-layout {
+    max-width: none;
+    padding: 0;
+    display: block !important;
+  }
+
+  .swiss-section-title {
+    margin-top: 1.5rem;
+  }
+
+  .sidebar-column {
+    position: static;
+    background: transparent;
+    padding: 0;
+    border: 1px solid #ddd;
+  }
+
+  .sidebar-grid {
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ============================
+   MOBILE STYLES
+   ============================ */
+
+@media (max-width: 640px) {
+  .page-header {
+    padding: 0.5rem var(--content-padding);
+  }
+
+  .page-header-content {
+    flex-wrap: wrap;
+  }
+
+  .page-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .page-title {
+    display: none;
+  }
+
+  .swiss-title {
+    font-size: 2rem;
+  }
+
+  .sidebar-title {
+    font-size: 1.75rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .sidebar-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .sidebar-column {
+    position: static;
+    padding: 1.25rem;
+  }
+}
