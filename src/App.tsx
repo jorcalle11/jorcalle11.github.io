@@ -11,6 +11,7 @@ import frontendContent from './content/frontend.md?raw'
 import devopsContent from './content/devops.md?raw'
 import backendContent from './content/backend.md?raw'
 import './App.css'
+import { pdfFilenameFromCvMarkdown } from './utils/pdfFilename'
 
 type LayoutType = 'sidebar' | 'swiss'
 type VariantType = 'fullstack' | 'frontend' | 'backend' | 'devops'
@@ -37,6 +38,7 @@ function App() {
   }, [])
 
   const content = contentMap[variant]
+  const pdfFilename = pdfFilenameFromCvMarkdown(content, `cv-${variant}.pdf`)
 
   return (
     <div className="cv-page">
@@ -46,7 +48,7 @@ function App() {
           <div className="page-controls">
             <LayoutToggle current={layout} onChange={setLayout} />
             <ThemeToggle />
-            <DownloadButton contentRef={contentRef} filename={`cv-${variant}.pdf`} />
+            <DownloadButton contentRef={contentRef} filename={pdfFilename} />
           </div>
         </div>
       </header>

@@ -29,6 +29,20 @@
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
 }
 
+/* Re-declare light tokens on subtree so html2pdf/html2canvas gets light surfaces when the app theme is dark. */
+.pdf-export-light {
+  --bg: #ffffff;
+  --bg-elevated: #f8fafc;
+  --text: #111111;
+  --text-muted: #666666;
+  --text-subtle: #888888;
+  --border: #e5e5e5;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
 @media (max-width: 640px) {
   :root {
     --content-padding: 1rem;

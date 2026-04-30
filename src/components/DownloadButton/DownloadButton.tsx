@@ -21,8 +21,14 @@ export function DownloadButton({ filename = 'cv.pdf', contentRef }: DownloadButt
 
     isGeneratingRef.current = true
 
+    element.classList.add('pdf-export-light')
+
     try {
       const html2pdf = (await import('html2pdf.js')).default
+
+      await new Promise<void>(resolve => {
+        requestAnimationFrame(() => requestAnimationFrame(() => resolve()))
+      })
 
       const opt = {
         margin: [10, 10],
@@ -45,6 +51,7 @@ export function DownloadButton({ filename = 'cv.pdf', contentRef }: DownloadButt
     } catch (error) {
       console.error('PDF generation failed:', error)
     } finally {
+      element.classList.remove('pdf-export-light')
       isGeneratingRef.current = false
     }
   }, [filename, contentRef])
