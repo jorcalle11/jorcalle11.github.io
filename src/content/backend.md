@@ -50,7 +50,7 @@ Senior Backend Engineer with 9+ years designing and shipping scalable backend sy
 ## Languages
 
 - Spanish (Native)
-- English (B2)
+- English (C1)
 
 ## Education
 

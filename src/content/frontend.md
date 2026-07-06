@@ -53,7 +53,7 @@ Senior Frontend Engineer with 9+ years building scalable web applications for B2
 ## Languages
 
 - Spanish (Native)
-- English (B2)
+- English (C1)
 
 ## Education
 

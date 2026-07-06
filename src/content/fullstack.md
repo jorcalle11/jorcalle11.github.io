@@ -52,7 +52,7 @@ Senior Full Stack Engineer with 9+ years building and scaling web platforms acro
 ## Languages
 
 - Spanish (Native)
-- English (B2)
+- English (C1)
 
 ## Education
 

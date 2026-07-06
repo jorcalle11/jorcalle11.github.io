@@ -55,7 +55,7 @@ Senior Platform/DevOps Engineer with 9+ years building and scaling cloud infrast
 ## Languages
 
 - Spanish (Native)
-- English (B2)
+- English (C1)
 
 ## Education
 
